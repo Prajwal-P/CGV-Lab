@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 #include<iostream>
+#include<Windows.h>
 #include<GL/glut.h>
 int le[500], re[500], flag = 0, m;
 
@@ -69,6 +70,7 @@ void display()
 			{
 				for (int j = le[i]; j < re[i]; j++)
 				{
+					//Sleep(1);
 					glColor3f(1, 0, 0);
 					glBegin(GL_POINTS);
 					glVertex2f(j, i);
@@ -77,10 +79,6 @@ void display()
 			}
 		}
 	}
-	char name[] = "REVANTH P N";
-	char usn[] = "1BI17CS123";
-	char batch[] = "'B4' BATCH";
-	char prog[] = "LAB PROGRAM-9 : FILLING THE POLYGON USING SCAN LINE ALGORITHM";
 	draw_text(200.0, 400.0, "Polygon filling using Scan Line Algorithm");
 	draw_text(200.0, 390.0, "Prajwal.P");
 	draw_text(200.0, 380.0, "1BI17CS111");
